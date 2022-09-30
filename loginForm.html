@@ -5,106 +5,139 @@
     <title> Registration Form</title>
     <link rel="shortcut icon" href="developer.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        form {
+            width: fit-content;
+            background-color: aquamarine;
+        }
+
+        label {
+            color: rgb(255, 0, 0);
+            font-size: large;
+           
+        }
+
+        input[type="text"],
+        [type="mail"] {
+            color: brown;
+            background: bisque;
+            width: 180px;
+            text-transform: uppercase;
+            border-radius: 10px;
+
+
+        }
+
+        input[type="submit"],
+        [type="RESET"] {
+            background: rgb(10, 46, 48);
+            color: rgb(238, 238, 6);
+            width: 100px;
+            border-radius: 20px;
+            height: 30px;
+        }
+    </style>
+
 </head>
 
 <body>
-
-    <table >
-        <tbody>
-
-            <h2 >Student Registration Form</h2>
-
-            <form action="Welcome.html" method="post">
-
-                <tr>
-                    <td><label for="Name">Full Name: </label></td>
-                    <td><input id="name" maxlength="50" name="name" type="text" /></td>
-                </tr>
-
-                
-
-                <tr>
-                    <td><label for="mail"> Email Address:</label>: </label></td>
-                    <td><input id="mail" maxlength="50" name="mail" type="mail" /></td>
-                </tr>
-
-                <tr>
-                    <td><label for="Passward"> Passward: </label></td>
-                    <td><input id="Passward" maxlength="50" name="Passward" type="password" /></td>
-                </tr>
-
-                <tr>
-                    <td> Gender </td>
-                    <td><input type="radio"> <label> Female </label><input type="radio"> <label> Male </label><input
-                            type="radio"> <label> Others </label></td>
-                </tr>
-
-                <tr>
-                    <td> <label> Select Graduation </label> </td>
-                    <td><select>
-                            <option> B.E</option>
-                            <option> BCA</option>
-                            <option> MCA</option>
-                            <option> BCS</option>
-                            <option> MBA</option>
-                        </select></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Date of Birth:</label></td>
-                    <td><input id="email" maxlength="50" name="email" type="date" /></td>
-                </tr>
-
-                <tr>
-                    <td><label for="date">Pass Out Year:</label></td>
-                    <td><input id="date" maxlength="50" name="date" type="date" /></td>
-                </tr>
-
-                <tr>
-                    <td> <label> Trainings </label> </td>
-                    <td><input type="checkbox"> <label> Angular</label><input type="checkbox"> <label> React
-                        </label><input type="checkbox"> <label> Java </label><input type="checkbox"> <label> Testing
-                        </label></td>
-                </tr>
-
-                <tr>
-                    <td><label for="date"> Profile Photo:</label></td>
-
-                    <td><input type="file" /></td>
-                </tr>
-                <tr>
-                    <td><label for="date"> Upload All mark sheet:</label></td>
-
-                    <td><input type="file" multiple /></td>
-                </tr>
-
-                <tr>
-                    <td> <label> Permanent Address </label></td>
-                    <td> <textarea rows="6" cols="30"> </textarea> </td>
-                </tr>
-
-                <tr>
-                    <td> <label> Country </label></td>
-                    <td> <input type="text"> </td>
-                </tr>
-                <tr>
-                    <td> Download templet</td>
-                    <button>
-                        
-                    </button>
-                </tr>
-                <tr>
-                    <td ><input name="Submit" type="Submit" value="SUBMIT" /></td>
-                    <td ><input name="RESET" type="RESET" value="RESET" /></td>
-                </tr>
-
-                
-                
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Student Registration Form</h2>
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="Name">Full Name: </label></td>
+                        <td><input id="name" maxlength="50" name="name" type="text" /></td>
+                    </tr>
 
 
-    </table>
-</body>
 
-</form>
+                    <tr>
+                        <td><label for="mail"> Email Address:</label>: </label></td>
+                        <td><input id="mail" maxlength="50" name="mail" type="mail" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Passward"> Passward: </label></td>
+                        <td><input id="Passward" maxlength="50" name="Passward" type="password" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input type="radio"> <label> Female </label><input type="radio"> <label> Male </label><input
+                                type="radio"> <label> Others </label></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Select Graduation </label> </td>
+                        <td><select>
+                                <option> B.E</option>
+                                <option> BCA</option>
+                                <option> MCA</option>
+                                <option> BCS</option>
+                                <option> MBA</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Date of Birth:</label></td>
+                        <td><input id="email" maxlength="50" name="email" type="date" /></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="date">Pass Out Year:</label></td>
+                        <td><input id="date" maxlength="50" name="date" type="date" /></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Trainings </label> </td>
+                        <td><input type="checkbox"> <label> Angular</label><input type="checkbox"> <label> React
+                            </label><input type="checkbox"> <label> Java </label><input type="checkbox"> <label> Testing
+                            </label></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="date"> Profile Photo:</label></td>
+
+                        <td><input type="file" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date"> Upload All mark sheet:</label></td>
+
+                        <td><input type="file" multiple /></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Permanent Address </label></td>
+                        <td> <textarea rows="6" cols="30"> </textarea> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label> Country </label></td>
+                        <td> <input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td><label>Download templet</label> </td>
+                        <button>
+
+                        </button>
+                    </tr>
+                    <tr>
+                        <td><input name="Submit" type="Submit" value="SUBMIT" /></td>
+                        <td><input name="RESET" type="RESET" value="RESET" /></td>
+                    </tr>
+
+
+
+
+
+            </table>
+        </fieldset>
+
+
+    </form>
 
 </body>
 
